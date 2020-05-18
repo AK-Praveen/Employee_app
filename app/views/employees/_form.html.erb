@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_area :name %>
+    <%= form.text_field :name %>
   </div>
 
   <div class="field">
@@ -23,15 +23,15 @@
 
   <div class="field">
     <%= form.label :gender %>
-    <%= form.text_area :gender %>
+    <%= form.select :gender, ['Male', 'Female'] %>
   </div>
 
   <div class="field">
     <%= form.label :designation %>
-    <%= form.text_area :designation %>
+    <%= form.text_field :designation %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "submit_button" %>
   </div>
 <% end %>
